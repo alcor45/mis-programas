@@ -1,0 +1,286 @@
+package <nombre_paq_sup>[.<nombre_sub_paq>]*;
+<tipo_de_dato> <nombre_variable>;
+-------------------------------------------------------------------------------------------------------------------------------
+TIPOS DE DATOS PRIMITIVOS:
+byte Es un entero con signo de 8 bits,
+short Es un entero con signo de 16 bits.
+int Es un entero con signo de 32 bits.
+long Es un entero con signo de 64 bits,
+float Es un número decimal
+double Es un número decimal
+boolean
+char El tipo de dato carácter es un simple carácter
+String .String cadena = “Sebastián”;
+-------------------------------------------------------------------------------------------------------------------------------
+ASIGNACIÓN ; <tipo_de_dato> <nombre_variable> = expresion;
+
+Operadores Unarios
++ Operador Unario de Suma; indica que el valor es positivo.
+- Operador Unario de Resta; indica que el valor es negativo.
+++ Operador de Incremento.
+-- Operador de Decremento.
+-------------------------------------------------------------------------------------------------------------------------------
+Operadores de Igualdad y Relación
+== Igual
+!= Distinto
+> Mayor que
+>= Mayor o igual que
+< Menor que
+<= Menor o igual que
+-------------------------------------------------------------------------------------------------------------------------------
+ESCRITURA EN JAVA
+System.out.println()....System.out.println(“Hola Mundo”);...System.out.println(“La variable tiene el valor de: ” + variable);
+System.out.print("Hola");escritura sin salto
+-------------------------------------------------------------------------------------------------------------------------------
+LECTURA O ENTRADA EN JAVAP
+así: import ;java.util.Scanner; Scanner leer = new Scanner(System.in)
+                                                String nombre = leer.nextline()
+                                                int edad = leer.nextInt()
+-------------------------------------------------------------------------------------------------------------------------------
+Operadores Condicionales
+&& AND
+|| OR
+! Operador Lógico de Negación.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+ESTRUCTURAS CONDICIONALES
+
+if (<condicion1>) {//solo se ejecuta cuando la condicion es verdadera
+<sentencias A>
+} else if(<condicion2>){
+<sentencias B>
+} else {
+<sentencias C>
+}
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+if(<condición>){//solo se ejecuta cuando la condicion es verdadera
+<sentencias A>
+} else {
+<sentencias B>
+}
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+SWITCH
+switch(<variable>) {
+case <valor1>:
+<sentencias1>
+break;
+case <valor2>:
+<sentencias2>
+break;
+default:
+<sentencias3>
+}
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+WHILE
+while (<condición>) {
+<sentencias>
+}
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+DO / WHILE
+do {
+<sentencias>
+} while (<condición>);
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOR
+for (<inicialización>; <terminación>; <incremento>) {
+<sentencias>
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+FUNCIONES
+
+[acceso][modificador][tipo] nombreFuncion([tipo] nombreArgumento, .......){
+/*
+* Bloque de instrucciones
+*/
+return valor;
+}
+public static int sumar ( int num1, int num2 ) { //es un ejemplo de como comenzar con las funciones
+public static void saludopersonalizado(String nombre) {
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FUNCIONES IMPORTANTES
+public static int generaNumAleatorio(int minimo,int maximo){//disco duro de roer
+
+return (int)Match.floor(Math.random()*(minimo-(maximo+1))+(maximo+1));
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Declaración y creación de un Vector
+tipo[] arregloV = new tipo[Tamaño];
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Declaración y creación de una Matriz
+tipo[][] arregloM = new tipo[Filas][Columnas];
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System.out.println(frase.toUpperCase());
+
+System.out.println(frasemin.toLowerCase());
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ r = Math.sqrt(num);//donde r es una variable del tipo double
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Concatenación de Strings
+String texto3 = texto1 + " " + texto2;//una manera
+
+String texto3 = texto1.concat(" ").concat(texto2);
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Comparación de Strings en Java
+
+El método indexOf()
+
+String texto1 = "Programación Fácil";
+int valorIndice = texto1.indexOf("Fácil");//me muestra la posicion donde ocurrio el concatenado
+System.out.print(valorIndice);//en este caso muestra 13,comienza a contar desde cero
+
+El método lastIndex()
+El método lastIndexOf() devuelve la posición de la última ocurrencia.
+String texto1 = "Programación Fácil";
+int valorIndice = texto1.lastIndexOf("a")//me indica donde esta la ultima letra "a" del texto la a con acento es otro caracter,tambien puede tomar frases enteras
+System.out.print(valorIndice);//en este caso es el 7
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+El método replace()
+El método replace() reemplaza todas las ocurrencias de una subcadena con otra subcadena. Se esperan dos argumentos en la llamada. Sencillamente, se busca el primer valor y se reemplaza en todas las ocurrencias.
+String texto1 = "hola, este String tiene más de un hola. Está hecho para buscar la última ocurrencia de la palabra hola. Por lo tanto, encontrará la posición de este hola.";
+String nuevoTexto = texto1.replace("hola", "adiós");//reemplaza la palabra hola por adios
+System.out.print(nuevoTexto);
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+El método chatAt()
+El método charAt() de Java, devuelve un caracter mediante una posición de String pasada como argumento.
+
+String texto1 = "Programación Fácil";
+
+char caracter = texto1.charAt(10);
+        
+System.out.print(caracter);//muestra el caracter dde la posicion escogida,en este caso  es la o con acento
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+El método substring()
+El método substring() devuelve una subcadena que empieza desde la posición indicada como argumento.
+
+String texto1 = "Programación Fácil";
+String caracter = texto1.substring(13)
+System.out.print(caracter);// en este caso facil
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+equals
+Determina si el objeto especificado es igual que el objeto actual
+cadena.equals("&&&&")//es un ejemplo.
+Esta manera se utiliza cuando la informacion entra por teclado
+Esta otra comparacion por ejemplo( s1==s2); se utiliza solo cuando se asigna el valor a las variables
+String s1 == "abc"     String S2 == "abc" entonces s1 == s2 es true
+pero es valido para este metodo tambien( s1.equals(s2));
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+equalsIgnoreCase()
+Compara dos strings para ver si son iguales ignorando las diferencias entre mayúsculas y minúsculas.
+ Este método es necesario porque no es posible comparar strings usando el operador de igualdad (==). 
+Retorna true si los strings son iguales y false si no lo son.
+(cadena1.equalsIgnoreCase(cadena2)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+public static void main(String[] args) {
+        Scanner numeros = new Scanner(System.in);
+        Scanner solicitud = new Scanner(System.in);
+        Scanner solicitud2 = new Scanner(System.in);
+
+        System.out.println("Ingrese dos numeros a eleccion: ");
+
+        double n1 = numeros.nextDouble();
+        double n2 = numeros.nextDouble();
+        boolean salir = false;
+
+        do {
+            System.out.println("Elija una opcion: ");
+            System.out.println("\nOpciones..");
+            System.out.println("1. Sumar");
+            System.out.println("2. Restar");
+            System.out.println("3. Multiplicar");
+            System.out.println("4. Dividir");
+            System.out.println("5. Salir");
+            int respuesta = solicitud.nextInt();
+            switch (respuesta) {
+                case 1:
+                    double suma = n1 + n2;
+                    System.out.println("El resultado es: " + suma);
+                    break;
+                case 2:
+                    double resta = n1 - n2;
+                    System.out.println("El resultado es: " + suma);
+                    break;
+                    break;
+                case 3:
+                    double multiplicacion = n1 * n2;
+                    System.out.println("El resultado es: " + multiplicacion);
+                    break;
+                case 4:
+                    if (n2 == 0) {
+                        System.out.println("NO se puede dividir por 0");
+                    } else {
+                        double division = n1 / n2;
+                        System.out.println("El resultado es: " + division);
+                    }
+                    break;
+                case 5:
+                    System.out.println("Estas seguro ? S/N");
+                    String respuesta2 = solicitud2.nextLine();
+
+                    if (respuesta2.equalsIgnoreCase("S")) {
+                        salir = true;
+                        break;
+                    }
+
+                default:
+                    System.out.println("Opcion incorrecta");
+                    break;
+            }
+
+        } while (!salir);
+        System.out.println("\nAdios");
+
+    }
+
+--------------------------------------------------------
+
+      ------------------------------------------------------------
+      
+------------------------------------------------
+public static void main(String[] args) {
+        Scanner info = new Scanner(System.in);
+        System.out.println("Ingrese moneda a convertir: ");
+        String euro = info.nextLine().toLowerCase();
+        System.out.print("Ingrese cantidad de dinero: ");
+        double n = info.nextDouble();
+        
+        conversion(n, euro);
+    }
+
+    public static void conversion(double n, String euro) {
+        double asignacion;
+        switch (euro) {
+            case "libras":
+                asignacion = n * 0.86;
+                System.out.println("Su conversion es: " + asignacion);
+                break;
+            case "dollar":
+                asignacion = n * 1.28611;
+                System.out.println("Su conversion es: " + asignacion);
+                break;
+            case "yenes":
+                asignacion = n * 129.852;
+                System.out.println("Su conversion es: " + asignacion);
+                break;
+                default:    
+                       System.out.println("Incorrecto");
+        }
+    }
+
+-----------------------------------------------------------------
+        
+        metodo para guardar algo en github
+1.seleccionar la carpeta con la opcion githere
+2.en la consola los siguientes comandos
+$ git init
+$ git add .
+$ git commit -m "descripcion"
+$ git branch -M main
+$ git remote add origin htpp://......direccion del repositorio
+git push -u origin main
+
+
+
+
+

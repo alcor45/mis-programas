@@ -1,0 +1,29 @@
+para mantener un ciclo de preguntas
+
+ public static void main(String[] args) {
+        Scanner leer = new Scanner(System.in);
+        String respuesta;
+        do {
+            System.out.println("Desea continuar");
+            respuesta = leer.nextLine();
+        } while (respuesta.equalsIgnoreCase("s"));
+      
+    }
+--------------------------------------------------------------------------
+llenado y muestra de vectores
+public static void main(String[] args) {//llenar vector
+         int[] vector = new int[100];
+        for (int i = 0; i < vector.length; i++) {
+           vector[i]= i+1;
+        }
+        for (int j = vector.length - 1; j >= 0; j--) {//mostrar vector descendente
+            System.out.println(vector[j]);
+        }
+System.out.println("******vector ascendente******");
+        for ( j = 0; j < vector.length - 1; j++) {
+            System.out.println(vector[j]);
+    }
+con elbucle for each//for mejorado
+for (int i:vector){
+     System.out.println(vector[i]);
+}
